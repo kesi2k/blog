@@ -12,10 +12,6 @@
 */
 // Regular expression in where clause states to accept any letter, any number and the characters '-' and '_'
 // Authentication routes
-
-Route::get('/', function() { return "hello world, do I work?"; });
-
-/*
 Route::get('auth/login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
 Route::post('auth/login', 'Auth\LoginController@login');
 Route::get('auth/logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
