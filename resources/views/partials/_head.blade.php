@@ -26,7 +26,10 @@
     <script src="/js/parsley.min.js"></script>
     <script src="/js/select2.min.js"></script>
     <script>
-
+$(document).ready(function(){
+  $(".select2-multi").select2();
+  $(".select2-multi").select2().val({!! json_encode ($post->tags()->allRelatedIds()) !!}).trigger('change');
+});//document ready
 </script>
 
 
